@@ -1,0 +1,17 @@
+h1{
+		font-family: verdana;
+		color:grey;
+		text-decoration: underline;
+		font-style:italic;
+}
+ul{
+		list-style-image:url(lolo/colecole.jpg);
+}
+table,tr,th,td{
+		border:1px solid black;
+		text-align:center;
+		background-color:#4CAF50;
+		color:white;
+
+]
+p{font-size:15px;}

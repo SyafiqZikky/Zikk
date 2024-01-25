@@ -1,0 +1,9 @@
+<html>
+
+<head>
+		<title>Kapal terbang</title>
+<head>
+
+<body>
+	<div style="text-align: center;">
+	<h1 style="color:#black; font-family: Arial">Flight Schedule</h1>

@@ -1,0 +1,25 @@
+<html> 
+    <head>
+        <title>
+            W3C DOM tester
+        </title>
+            <script type = 'text/javascript'>
+				function test_getElement(){
+				id=prompt("Please enter the id of a page element");
+				obj=document.getElementById(id);
+				if(obj)
+					alert("Found element; its tag name is"+obj,tagName);
+				else
+				alert("Sorry,I cannot find this element");
+				}
+			</script>
+<head>
+<body id='SAN'>
+  <H1 id='Biri'>Object Reference Tester </H1>
+  <P id='Makdi'>Click the button to test the getElementByID function.</P>
+ <div id ='Jamal'>
+  <input type ='button' value='Click here' onclick ="test_getElement()">
+ </div>
+
+</body>
+				

@@ -1,0 +1,57 @@
+<body> 
+	<form name="d" onClick="convertTemp()">
+	<p>
+		<input type="submit" name="submit" id="submit" value="Click HERE"></p></form>
+	<script>
+	function fahrenToCelcius(f){
+		var temp =(f-32)*5/9;
+		return temp;
+	}
+		function convertTemp(){
+			var temp = prompt("What temperature Fahrenheit?","");
+			var celcius = fahrenToCelcius(temp);
+			alert(temp +" degree Fahrenheit is "+ celcius +" degrees Celcius.");
+	}
+	</script>
+<html>
+<head>
+    <title>Change element style</title>
+    <style>
+        .highlight {
+            background-color: blue;
+            color: white;
+            font-weight: bold;
+        }
+
+        .red {
+            background-color: red;
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+    <script type='text/javascript'>
+        function change_style() {
+            var obj = document.getElementById('Alice');
+            obj.className = 'highlight';
+        }
+
+        function change_style_with_params(id, className) {
+            var obj = document.getElementById(id);
+            obj.className = className;
+        }
+    </script>
+</head>
+<body id='Santa'>
+    <h1 id='Cumi'>Object Reference Tester</h1>
+    <p id='Ali'>
+        Click the button to alter the style of this paragraph.
+    </p>
+    <p id='Abdul'>
+        Click the button to alter the style of this paragraph.
+    </p>
+    <div id='Fredo'>
+<input type='button' value='Change to blue' onclick="change_style()">
+    </div>
+    <input type='button' value='Change to red' onclick="change_style_with_params('Abdul', 'red')">
+</body>
+</html>
